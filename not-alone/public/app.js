@@ -1,11 +1,13 @@
 console.log("up and running");
 
-var cc = new ChatCamp({
-  appId: 6399747348821438464
-})
+// var firebase = require("firebase/app");
 
-cc.connect(USER_ID, function(error, user) {
-  if(errror === null){
-	console.log("Connected to ChatCamp")
-  }
-})
+
+firebase.initializeApp({
+  "apiKey": "AIzaSyAjvnZbFYBgHxxWpuzdmlmaCMvNW1jGdaA",
+  "databaseURL": "https://not-alone-solution.firebaseio.com",
+  "storageBucket": "not-alone-solution.appspot.com",
+  "authDomain": "not-alone-solution.firebaseapp.com",
+  "messagingSenderId": "982632196723",
+  "projectId": "not-alone-solution"
+});
