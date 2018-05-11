@@ -84,10 +84,54 @@ const Navigation = () =>
   );
 
   const NavigationNonAuth = () =>
-  <ul>
-    <li><Link to={routes.LANDING}>Landing</Link></li>
-    <li><Link to={routes.LOG_IN}>Log In </Link></li>
-  </ul>
+  <Menu fixed='top' inverted="inverted">
+    <Container>
+      <Menu.Item as='a' header="header">
+        Not Alone
+      </Menu.Item>
+
+      <Menu.Item as='a'>
+        <Link to={routes.LOG_IN}>Home</Link>
+
+      </Menu.Item>
+
+      <Menu.Item as='a'><Link to={routes.ABOUT}>
+        About</Link>
+
+      </Menu.Item>
+
+      <Menu.Item as='a'>
+        <Link to={routes.LOG_IN}>Log In</Link>
+
+      </Menu.Item>
+
+
+
+
+      <Dropdown item="item" simple="simple" text='Recovery'>
+        <Dropdown.Menu>
+          <Dropdown.Item>Ask It Forum</Dropdown.Item>
+          <Dropdown.Item>News</Dropdown.Item>
+          <Dropdown.Divider/>
+          <Dropdown.Header>Recovery</Dropdown.Header>
+          <Dropdown.Item>
+            <i className='dropdown icon'/>
+            <span className='text'>Events</span>
+            <Dropdown.Menu>
+              <Dropdown.Item>Near You</Dropdown.Item>
+              <Dropdown.Item>Around the World</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown.Item>
+          <Dropdown.Item>12 Step Meetings</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+
+    </Container>
+  </Menu>
+  // <ul>
+  //   <li><Link to={routes.LANDING}>Landing</Link></li>
+  //   <li><Link to={routes.LOG_IN}>Log In </Link></li>
+  // </ul>
 
 
 export default Navigation;

@@ -16,10 +16,20 @@ import * as routes from '../constants/routes';
 import Footer from './Footer';
 import Navigation from './Navigation';
 
+<style>
+ { `#p_wrap
+    white-space: { before ;}
+    `
+  }
+</style>
+
+
 const LogInPage = ({ history }) =>
 <div>
+
   <LogInForm history={history} />
   <Footer />
+
 </div>
 
 const byPropKey = (propertyName, value) => () => ({
@@ -73,7 +83,8 @@ class LogInForm extends Component {
     email === '';
 
   return (
-  (<div className='login-form'>
+  (
+    <div className='login-form' style={{margin: '50px'}}>
 
   <style>
     {

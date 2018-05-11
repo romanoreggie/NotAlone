@@ -3,7 +3,7 @@ import React from 'react';
 import withAuthorization from './withAuthorization';
 
 const HomePage = () =>
-        <div>
+        <div style={{margin: '50px'}}>
           <h1>Home</h1>
           <p>The Home Page is accessible by every signed in user.</p>
         </div>

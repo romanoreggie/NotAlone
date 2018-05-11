@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AboutPage = () =>
-        <div>
+        <div style={{margin: '50px'}}>
           <h1>About</h1>
         </div>
 
