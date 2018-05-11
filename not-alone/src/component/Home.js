@@ -1,20 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Home extends Component {
-    render(){
-      return(
+import withAuthorization from './withAuthorization';
+
+const HomePage = () =>
         <div>
-            <div>
-              <div className={'container'}>
-                <h2 className={'teal-text'}>Hello world!</h2>
-                <p>
-                  Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                </p>
-              </div>
-            </div>
-          </div>
-      );
-    };
-};
+          <h1>Home</h1>
+          <p>The Home Page is accessible by every signed in user.</p>
+        </div>
 
-export default Home;
+const authCondition = (authUser) => !!authUser;
+
+export default withAuthorization(authCondition)(HomePage);

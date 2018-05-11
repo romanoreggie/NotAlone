@@ -1,125 +1,93 @@
-import React,{Component} from 'react';
-import {
- BrowserRouter as Router,
- Route,
- Link
-} from 'react-router-dom';
+import React from 'react';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Home from './Home';
 import About from './About';
+import {
+  Container,
+  Divider,
+  Dropdown,
+  Grid,
+  Header,
+  Image,
+  List,
+  Menu,
+  Segment
+} from 'semantic-ui-react'
 
-import { Container, Divider, Dropdown, Grid, Header, Image, List, Menu, Segment } from 'semantic-ui-react'
+import AuthUserContext from './AuthUserContext';
+import SignOutButton from './SignOut';
+import * as routes from '../constants/routes';
 
-const Navigation = () => (
-  <div>
-    <Menu fixed='top' inverted>
+const Navigation = () =>
+  <AuthUserContext.Consumer>
+    {authUser => authUser
+      ? <NavigationAuth />
+      : <NavigationNonAuth />
+    }
+  </AuthUserContext.Consumer>
+
+  const NavigationAuth = () => (
+    <Menu fixed='top' inverted="inverted">
       <Container>
-        <Menu.Item as='a' header>
-          Project Name
+        <Menu.Item as='a' header="header">
+          Not Alone
         </Menu.Item>
-        <Menu.Item as='a'>Home</Menu.Item>
 
-        <Dropdown item simple text='Dropdown'>
+        <Menu.Item as='a'>
+          <Link to={routes.HOME}>Home</Link>
+
+        </Menu.Item>
+
+        <Menu.Item as='a'><Link to={routes.ABOUT}>
+          About</Link>
+
+        </Menu.Item>
+
+        <Menu.Item as='a'>
+          <Link to={routes.LOG_IN}>Log In</Link>
+
+        </Menu.Item>
+
+
+        <Menu.Item as='a'>
+          <Link to={routes.ACCOUNT}>Account</Link>
+
+        </Menu.Item>
+
+
+
+
+        <Dropdown item="item" simple="simple" text='Recovery'>
           <Dropdown.Menu>
-            <Dropdown.Item>List Item</Dropdown.Item>
-            <Dropdown.Item>List Item</Dropdown.Item>
-            <Dropdown.Divider />
-            <Dropdown.Header>Header Item</Dropdown.Header>
+            <Dropdown.Item>Ask It Forum</Dropdown.Item>
+            <Dropdown.Item>News</Dropdown.Item>
+            <Dropdown.Divider/>
+            <Dropdown.Header>Recovery</Dropdown.Header>
             <Dropdown.Item>
-              <i className='dropdown icon' />
-              <span className='text'>Submenu</span>
+              <i className='dropdown icon'/>
+              <span className='text'>Events</span>
               <Dropdown.Menu>
-                <Dropdown.Item>List Item</Dropdown.Item>
-                <Dropdown.Item>List Item</Dropdown.Item>
+                <Dropdown.Item>Near You</Dropdown.Item>
+                <Dropdown.Item>Around the World</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown.Item>
-            <Dropdown.Item>List Item</Dropdown.Item>
+            <Dropdown.Item>12 Step Meetings</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
+
+        <Menu.Item as='a'>
+          <SignOutButton />
+        </Menu.Item>
+
       </Container>
     </Menu>
+  );
 
-    <Container text style={{ marginTop: '7em' }}>
-      <Header as='h1'>Semantic UI React Fixed Template</Header>
-      <p>This is a basic fixed menu template using fixed size containers.</p>
-      <p>A text container is used for the main container, which is useful for single column layouts.</p>
-    </Container>
+  const NavigationNonAuth = () =>
+  <ul>
+    <li><Link to={routes.LANDING}>Landing</Link></li>
+    <li><Link to={routes.LOG_IN}>Log In </Link></li>
+  </ul>
 
-    <Segment
-      inverted
-      vertical
-      style={{ margin: '5em 0em 0em', padding: '5em 0em' }}
-    >
-      <Container textAlign='center'>
-        <Grid divided inverted stackable>
-          <Grid.Row>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='Group 1' />
-              <List link inverted>
-                <List.Item as='a'>Link One</List.Item>
-                <List.Item as='a'>Link Two</List.Item>
-                <List.Item as='a'>Link Three</List.Item>
-                <List.Item as='a'>Link Four</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='Group 2' />
-              <List link inverted>
-                <List.Item as='a'>Link One</List.Item>
-                <List.Item as='a'>Link Two</List.Item>
-                <List.Item as='a'>Link Three</List.Item>
-                <List.Item as='a'>Link Four</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='Group 3' />
-              <List link inverted>
-                <List.Item as='a'>Link One</List.Item>
-                <List.Item as='a'>Link Two</List.Item>
-                <List.Item as='a'>Link Three</List.Item>
-                <List.Item as='a'>Link Four</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as='h4' content='Footer Header' />
-              <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-
-        <Divider inverted section />
-        <List horizontal inverted divided link>
-          <List.Item as='a' href='#'>Site Map</List.Item>
-          <List.Item as='a' href='#'>Contact Us</List.Item>
-          <List.Item as='a' href='#'>Terms and Conditions</List.Item>
-          <List.Item as='a' href='#'>Privacy Policy</List.Item>
-        </List>
-      </Container>
-    </Segment>
-  </div>
-)
-
-// export default FixedMenuLayout;
-// class Navigation extends Component {
-//   render() {
-//   return(
-//     <Router>
-//       <div>
-//         <nav>
-//         <ul>
-//           <li>
-//             <Link to='/'>Home</Link>
-//           </li>
-//           <li>
-//             <Link to='/About'>About</Link>
-//           </li>
-//         </ul>
-//         <Route exact path='/' component={Home} />
-//         <Route path='/About' component={About} />
-//     </nav>
-//   </div>
-// </Router>
-//   );
-// }
-// }
 
 export default Navigation;

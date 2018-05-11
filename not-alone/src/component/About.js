@@ -1,20 +1,8 @@
-import React, { Component } from 'react';
-import '../App.css';
+import React from 'react';
 
-class About extends Component {
-
-    render(){
-      return(
+const AboutPage = () =>
         <div>
-          <h5>About us</h5>
-            <div>
-              <p>
-                Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-              </p>
-            </div>
-          </div>
-      );
-    }
-  }
+          <h1>About</h1>
+        </div>
 
-export default About;
+export default AboutPage;
