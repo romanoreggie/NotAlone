@@ -59,19 +59,39 @@ const Navigation = () =>
 
         <Dropdown item="item" simple="simple" text='Recovery'>
           <Dropdown.Menu>
-            <Dropdown.Item>Ask It Forum</Dropdown.Item>
-            <Dropdown.Item>News</Dropdown.Item>
+            <Dropdown.Item>
+              <Link to={routes.ASKITFORUM}>
+                Ask It Forum
+              </Link>
+            </Dropdown.Item>
+            <Dropdown.Item>
+              <Link to={routes.NEWS}>
+                News
+              </Link>
+            </Dropdown.Item>
             <Dropdown.Divider/>
             <Dropdown.Header>Recovery</Dropdown.Header>
             <Dropdown.Item>
               <i className='dropdown icon'/>
               <span className='text'>Events</span>
               <Dropdown.Menu>
-                <Dropdown.Item>Near You</Dropdown.Item>
-                <Dropdown.Item>Around the World</Dropdown.Item>
+                <Dropdown.Item>
+                  <Link to={routes.EVENTS_LOCAL}>
+                    Near You
+                  </Link>
+                </Dropdown.Item>
+                <Dropdown.Item>
+                  <Link to={routes.EVENTS_GLOBAL}>
+                    Around the World
+                  </Link>
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown.Item>
-            <Dropdown.Item>12 Step Meetings</Dropdown.Item>
+            <Dropdown.Item>
+              <Link to={routes.TWELVESTEP_MEETINGS}>
+                12 Step Meetings
+              </Link>
+              </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
 
@@ -110,19 +130,38 @@ const Navigation = () =>
 
       <Dropdown item="item" simple="simple" text='Recovery'>
         <Dropdown.Menu>
-          <Dropdown.Item>Ask It Forum</Dropdown.Item>
-          <Dropdown.Item>News</Dropdown.Item>
+          <Dropdown.Item>
+            <Link to={routes.ASKITFORUM}>
+              Ask It Forum
+            </Link>
+            </Dropdown.Item>
+          <Dropdown.Item>
+            <Link to={routes.NEWS}>
+              News
+            </Link>
+          </Dropdown.Item>
           <Dropdown.Divider/>
           <Dropdown.Header>Recovery</Dropdown.Header>
           <Dropdown.Item>
             <i className='dropdown icon'/>
             <span className='text'>Events</span>
             <Dropdown.Menu>
-              <Dropdown.Item>Near You</Dropdown.Item>
-              <Dropdown.Item>Around the World</Dropdown.Item>
+              <Dropdown.Item>
+                <Link to={routes.EVENTS_LOCAL}>
+                  Near You
+                </Link>
+              </Dropdown.Item>
+              <Dropdown.Item>
+                <Link to={routes.EVENTS_GLOBAL}>
+                  Around the World
+                </Link>
+              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown.Item>
-          <Dropdown.Item>12 Step Meetings</Dropdown.Item>
+          <Dropdown.Item><Link to={routes.TWELVESTEP_MEETINGS}>
+            12 Step Meetings
+          </Link>
+        </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
 

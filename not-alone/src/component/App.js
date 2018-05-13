@@ -19,6 +19,11 @@ import SoberLivingPage from './SoberLiving';
 import ResumePage from './Resume';
 import InterviewTipsPage from './InterviewTips';
 import JobHelpPage from './JobHelp';
+import TwelveStepMeetingsPage from './12StepMeetings';
+import EventsGlobalPage from './EventsGlobal';
+import EventsLocalPage from './EventsLocal';
+import NewsPage from './News';
+import AskItForum from './AskItForum';
 
 import * as routes from '../constants/routes';
 import { firebase } from '../firebase';
@@ -91,6 +96,26 @@ const App = () =>
         <Route
           exact path={routes.JOB_HELP}
           component ={() => <JobHelpPage />}
+        />
+        <Route
+          exact path={routes.ASKITFORUM}
+          component ={() => <AskItForum />}
+        />
+        <Route
+          exact path={routes.NEWS}
+          component ={() => <NewsPage />}
+        />
+        <Route
+          exact path={routes.EVENTS_LOCAL}
+          component ={() => <EventsLocalPage />}
+        />
+        <Route
+          exact path={routes.EVENTS_GLOBAL}
+          component ={() => <EventsGlobalPage />}
+        />
+        <Route
+          exact path={routes.TWELVESTEP_MEETINGS}
+          component ={() => <TwelveStepMeetingsPage />}
         />
 
       </div>
