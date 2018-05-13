@@ -1,10 +1,12 @@
 import React from 'react';
 import Footer from './Footer';
 
-const AboutPage = () =>
+
+
+const JobHelpPage = () =>
         <div style={{margin: '50px'}}>
-          <h1>About</h1>
+          <h1>Job Application Help</h1>
           <Footer />
         </div>
 
-export default AboutPage;
+export default JobHelpPage;

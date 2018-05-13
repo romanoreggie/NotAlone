@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Footer from './Footer';
 import { withRouter } from 'react-router-dom';
 
 import { SignUpLink } from './SignUp';
@@ -13,6 +13,7 @@ const SignInPage = ({ history }) =>
     <SignInForm history={history} />
     <PasswordForgetLink />
     <SignUpLink />
+    <Footer />
   </div>
 
 const byPropKey = (propertyName, value) => () => ({

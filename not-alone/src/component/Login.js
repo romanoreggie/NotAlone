@@ -5,6 +5,7 @@ import {
   Grid,
   Header,
   Message,
+  Container,
   Segment
 } from 'semantic-ui-react';
 import { withRouter } from 'react-router-dom';
@@ -101,10 +102,17 @@ class LogInForm extends Component {
     <Grid.Column style={{
         maxWidth: 450
       }}>
+      {/* <Container text> */}
+      <Header size='huge' textAlign='center'>
+        {' '}Not-Alone
+      </Header>
+      <Header size='medium'>
+        Not-Alone is a safe place designed for those recovering from Substance Abuse. It is a space where you can discuss anything you're struggling with and get help from a fellowship of your own chosing.
+      </Header>
       <Header as='h2' textAlign='center'>
         {' '}Log-in to your account
       </Header>
-
+      {/* </Container> */}
 
       <Form size='large' onSubmit={this.onSubmit}>
         <Segment stacked="stacked">

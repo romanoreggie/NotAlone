@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Footer from './Footer';
 import AuthUserContext from './AuthUserContext';
 import { PasswordForgetForm } from './PasswordForget';
 import PasswordChangeForm from './PasswordChange';
@@ -12,6 +12,7 @@ const AccountPage = () =>
           <h1>Account: {authUser.email}</h1>
           <PasswordForgetForm />
           <PasswordChangeForm />
+          <Footer />
         </div>
         }
     </AuthUserContext.Consumer>

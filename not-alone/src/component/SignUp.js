@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import {Link, withRouter} from 'react-router-dom';
 import {auth, db} from '../firebase';
-
+import Footer from './Footer';
 import * as routes from '../constants/routes';
 
 const SignUpPage = ({history}) => <div>
   <h1 style={{margin: '50px'}}>SignUp</h1>
   <SignUpForm history={history}/>
+  <Footer />
 </div>
 
 const INITIAL_STATE = {

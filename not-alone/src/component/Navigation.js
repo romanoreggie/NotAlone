@@ -43,14 +43,14 @@ const Navigation = () =>
 
         </Menu.Item>
 
-        <Menu.Item as='a'>
+        {/* <Menu.Item as='a'>
           <Link to={routes.LOG_IN}>Log In</Link>
 
-        </Menu.Item>
+        </Menu.Item> */}
 
 
         <Menu.Item as='a'>
-          <Link to={routes.ACCOUNT}>Account</Link>
+          <Link to={routes.ACCOUNT}>Profile</Link>
 
         </Menu.Item>
 

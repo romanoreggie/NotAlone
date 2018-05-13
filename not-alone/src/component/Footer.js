@@ -8,16 +8,17 @@ import Home from './Home';
 import About from './About';
 
 import { Container, Divider, Dropdown, Grid, Header, Image, List, Menu, Segment } from 'semantic-ui-react'
+import * as routes from '../constants/routes';
 
 
 
 const Footer = () => (
-  <Router>
     <div>
+
 <Segment
   inverted
   vertical
-  style={{ position: 'relative', margin: '5em 0em 0em', padding: '5em 0em' }}
+  style={{ margin: '5em 0em 0em', padding: '5em 0em' }}
 >
   <Container textAlign='center'>
     <Grid divided inverted stackable>
@@ -25,18 +26,39 @@ const Footer = () => (
         <Grid.Column width={3}>
           <Header inverted as='h4' content='Need Help?' />
           <List link inverted>
-            <List.Item as='a'>Treatment Center</List.Item>
-            <List.Item as='a'>Detox Center</List.Item>
-            <List.Item as='a'>Sober Living</List.Item>
-            <List.Item as='a'>Oxford Living</List.Item>
+            <List.Item as='a'>
+              <Link to={routes.TREATMENT}>Treatment Center
+              </Link>
+            </List.Item>
+            <List.Item as='a'>
+              <Link to={routes.DETOX}>Detox Center
+              </Link>
+            </List.Item>
+            <List.Item as='a'>
+              <Link to={routes.SOBER_LIVING}>Sober Living
+              </Link>
+          </List.Item>
+            <List.Item as='a'>
+              <Link to={routes.OXFORD}>Oxford Living
+            </Link>
+          </List.Item>
           </List>
         </Grid.Column>
         <Grid.Column width={3}>
           <Header inverted as='h4' content='Job Resource' />
           <List link inverted>
-            <List.Item as='a'>Resume Builder</List.Item>
-            <List.Item as='a'>Interview Tips</List.Item>
-            <List.Item as='a'>Job Application Help</List.Item>
+            <List.Item as='a'>
+              <Link to={routes.RESUME}>Resume Builder
+              </Link>
+            </List.Item>
+            <List.Item as='a'>
+              <Link to={routes.INTERVIEW_TIPS}>Interview Tips
+              </Link>
+            </List.Item>
+            <List.Item as='a'>
+              <Link to={routes.JOB_HELP}>Job Application Help
+              </Link>
+            </List.Item>
           </List>
         </Grid.Column>
         <Grid.Column width={3}>
@@ -65,7 +87,6 @@ const Footer = () => (
   </Container>
 </Segment>
 </div>
-</Router>
 )
 
 export default Footer;
