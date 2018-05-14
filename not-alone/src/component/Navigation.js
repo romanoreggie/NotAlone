@@ -33,10 +33,12 @@ const Navigation = () =>
           Not Alone
         </Menu.Item>
 
-        <Menu.Item as='a'>
-          <Link to={routes.HOME}>Home</Link>
 
-        </Menu.Item>
+        <Menu.Item as={Link} to='/home'>
+            Home
+          </Menu.Item>
+
+
 
         <Menu.Item as='a'><Link to={routes.ABOUT}>
           About</Link>
@@ -59,15 +61,11 @@ const Navigation = () =>
 
         <Dropdown item="item" simple="simple" text='Recovery'>
           <Dropdown.Menu>
-            <Dropdown.Item>
-              <Link to={routes.ASKITFORUM}>
+            <Dropdown.Item as={Link} to='/ask-it-forum'>
                 Ask It Forum
-              </Link>
             </Dropdown.Item>
-            <Dropdown.Item>
-              <Link to={routes.NEWS}>
+            <Dropdown.Item as={Link} to='/news'>
                 News
-              </Link>
             </Dropdown.Item>
             <Dropdown.Divider/>
             <Dropdown.Header>Recovery</Dropdown.Header>
@@ -75,22 +73,16 @@ const Navigation = () =>
               <i className='dropdown icon'/>
               <span className='text'>Events</span>
               <Dropdown.Menu>
-                <Dropdown.Item>
-                  <Link to={routes.EVENTS_LOCAL}>
+                <Dropdown.Item as={Link} to='/events-near-you'>
                     Near You
-                  </Link>
                 </Dropdown.Item>
-                <Dropdown.Item>
-                  <Link to={routes.EVENTS_GLOBAL}>
+                <Dropdown.Item as={Link} to='/global-events'>
                     Around the World
-                  </Link>
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown.Item>
-            <Dropdown.Item>
-              <Link to={routes.TWELVESTEP_MEETINGS}>
+            <Dropdown.Item as={Link} to='/12step-meetings'>
                 12 Step Meetings
-              </Link>
               </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
@@ -110,10 +102,11 @@ const Navigation = () =>
         Not Alone
       </Menu.Item>
 
-      <Menu.Item as='a'>
-        <Link to={routes.LOG_IN}>Home</Link>
 
-      </Menu.Item>
+      <Menu.Item as={Link} to='/home'>
+          Home
+        </Menu.Item>
+
 
       <Menu.Item as='a'><Link to={routes.ABOUT}>
         About</Link>
@@ -130,15 +123,12 @@ const Navigation = () =>
 
       <Dropdown item="item" simple="simple" text='Recovery'>
         <Dropdown.Menu>
-          <Dropdown.Item>
-            <Link to={routes.ASKITFORUM}>
+
+          <Dropdown.Item as={Link} to='/ask-it-forum'>
               Ask It Forum
-            </Link>
             </Dropdown.Item>
-          <Dropdown.Item>
-            <Link to={routes.NEWS}>
+          <Dropdown.Item as={Link} to='/news'>
               News
-            </Link>
           </Dropdown.Item>
           <Dropdown.Divider/>
           <Dropdown.Header>Recovery</Dropdown.Header>
@@ -146,21 +136,16 @@ const Navigation = () =>
             <i className='dropdown icon'/>
             <span className='text'>Events</span>
             <Dropdown.Menu>
-              <Dropdown.Item>
-                <Link to={routes.EVENTS_LOCAL}>
+              <Dropdown.Item as={Link} to='/events-near-you'>
                   Near You
-                </Link>
               </Dropdown.Item>
-              <Dropdown.Item>
-                <Link to={routes.EVENTS_GLOBAL}>
+              <Dropdown.Item as={Link} to='/global-events'>
                   Around the World
-                </Link>
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown.Item>
-          <Dropdown.Item><Link to={routes.TWELVESTEP_MEETINGS}>
+          <Dropdown.Item as={Link} to='/12step-meetings'>
             12 Step Meetings
-          </Link>
         </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
