@@ -1,12 +1,18 @@
 import React, {Component} from 'react';
 import {Link, withRouter} from 'react-router-dom';
-import {auth, db} from '../firebase';
+import {auth} from '../firebase';
 import Footer from './Footer';
+import {
+  Container
+} from 'semantic-ui-react';
 import * as routes from '../constants/routes';
 
-const SignUpPage = ({history}) => <div>
-  <h1 style={{margin: '50px'}}>SignUp</h1>
+const SignUpPage = ({history}) =>
+<div>
+  <Container style={{ margin: '50px' }}>
+  <h1 style={{margin: 'top 50px'}}>SignUp</h1>
   <SignUpForm history={history}/>
+  </Container>
   <Footer />
 </div>
 

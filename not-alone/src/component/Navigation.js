@@ -1,17 +1,9 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import Home from './Home';
-import About from './About';
+import { Link } from 'react-router-dom';
 import {
   Container,
-  Divider,
   Dropdown,
-  Grid,
-  Header,
-  Image,
-  List,
   Menu,
-  Segment
 } from 'semantic-ui-react'
 
 import AuthUserContext from './AuthUserContext';
@@ -27,7 +19,7 @@ const Navigation = () =>
   </AuthUserContext.Consumer>
 
   const NavigationAuth = () => (
-    <Menu fixed='top' inverted="inverted">
+    <Menu fixed='top' inverted="inverted" style={{margin: '50px, 0px, 50px, 0px'}}>
       <Container>
         <Menu.Item as='a' header="header">
           Not Alone

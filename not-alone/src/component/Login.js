@@ -5,8 +5,8 @@ import {
   Grid,
   Header,
   Message,
-  Container,
-  Segment
+  Segment,
+  Container
 } from 'semantic-ui-react';
 import { withRouter } from 'react-router-dom';
 
@@ -15,20 +15,13 @@ import { PasswordForgetLink } from './PasswordForget';
 import { auth } from '../firebase';
 import * as routes from '../constants/routes';
 import Footer from './Footer';
-import Navigation from './Navigation';
-
-<style>
- { `#p_wrap
-    white-space: { before ;}
-    `
-  }
-</style>
 
 
 const LogInPage = ({ history }) =>
 <div>
-
-  <LogInForm history={history} />
+  <Container style={{margin: '50px'}}>
+    <LogInForm history={history} />
+  </Container>
   <Footer />
 
 </div>
@@ -85,7 +78,7 @@ class LogInForm extends Component {
 
   return (
   (
-    <div className='login-form' style={{margin: '50px'}}>
+    <div className='login-form' style={{margin: 'top 50px'}}>
 
   <style>
     {

@@ -1,10 +1,15 @@
 import React from 'react';
 import Footer from './Footer';
-
+import {
+  Container,
+  Header
+} from 'semantic-ui-react';
 
 const DetoxPage = () =>
-        <div style={{margin: '50px'}}>
+        <div>
+          <Container style={{margin: '50px'}}>
           <h1>Detox Center Location</h1>
+        </Container>
           <Footer />
         </div>
 

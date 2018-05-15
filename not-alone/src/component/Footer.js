@@ -1,14 +1,8 @@
-import React,{Component} from 'react';
-import {
- BrowserRouter as Router,
- Route,
- Link
-} from 'react-router-dom';
-import Home from './Home';
-import About from './About';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import { Container, Divider, Dropdown, Grid, Header, Image, List, Menu, Segment } from 'semantic-ui-react'
-import * as routes from '../constants/routes';
+import { Container, Divider, Grid, Header, List, Segment } from 'semantic-ui-react'
+// import * as routes from '../constants/routes';
 
 
 

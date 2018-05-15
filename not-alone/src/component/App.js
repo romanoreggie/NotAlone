@@ -1,12 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Navigation from './Navigation';
-import Footer from './Footer';
-import SideBar from './SideBar';
-import LoginForm from './Login';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import LandingPage from './Landing';
 import SignUpPage from './SignUp';
-import SignInPage from './SignIn';
 import PasswordForgetPage from './PasswordForget';
 import HomePage from './Home'
 import AccountPage from './Account';
@@ -26,7 +22,6 @@ import NewsPage from './News';
 import AskItForum from './AskItForum';
 
 import * as routes from '../constants/routes';
-import { firebase } from '../firebase';
 
 import withAuthentication from './withAuthentication';
 

@@ -1,10 +1,15 @@
 import React from 'react';
 import Footer from './Footer';
-
+import {
+  Container,
+  Header
+} from 'semantic-ui-react';
 const TwelveStepMeetingsPage = () =>
-        <div style={{margin: '50px'}}>
+    <div>
+      <Container style={{margin: '50px'}}>
           <h1>12 Step Meetings Near You</h1>
-          <Footer />
-        </div>
+      </Container>
+      <Footer />
+    </div>
 
 export default TwelveStepMeetingsPage;

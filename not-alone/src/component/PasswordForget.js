@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import Footer from './Footer';
+import {
+  Container
+} from 'semantic-ui-react';
 import { auth } from '../firebase';
 
 const PasswordForgetPage = () =>
-        <div style={{margin: '50px'}}>
+        <div>
+          <Container style={{margin: '50px'}}>
           <h1>Password Forget</h1>
           <PasswordForgetForm />
+        </Container>
+          <Footer />
         </div>
 
 const byPropKey = (propertyName, value) => () => ({

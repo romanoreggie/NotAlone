@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Footer from './Footer';
 import { withRouter } from 'react-router-dom';
+import {
+  Container
+} from 'semantic-ui-react';
 
 import { SignUpLink } from './SignUp';
 import { PasswordForgetLink } from './PasswordForget';
@@ -9,10 +12,12 @@ import * as routes from '../constants/routes';
 
 const SignInPage = ({ history }) =>
   <div>
+    <Container style={{margin: '50px'}}>
     <h1>SignIn</h1>
     <SignInForm history={history} />
     <PasswordForgetLink />
     <SignUpLink />
+    </Container>
     <Footer />
   </div>
 
