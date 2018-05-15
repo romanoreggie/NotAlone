@@ -11,11 +11,13 @@ import {
 
 const AccountPage = () =>
   <div>
-    <Container>
+    <Container textAlign='center' style={{margin: '50px'}}>
     <AuthUserContext.Consumer>
       {authUser =>
-        <div style={{margin: '50px'}}>
-          <h1>Account: {authUser.email}</h1>
+        <div>
+          <Header as='h1'>
+            Account: {authUser.email}
+          </Header>
           <PasswordForgetForm />
           <PasswordChangeForm />
       </div>

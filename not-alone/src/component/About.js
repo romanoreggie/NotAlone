@@ -16,7 +16,7 @@ const AboutPage = () =>
         With that in mind I wanted to develop somewhere that those struggling to connect and develop a fellowship could go to reach out for help and not have the same fear of connection, social anxiety, or whatever it may be preventing someone to ask for the help they needed.
       </p>
       <p>
-        Less than a week before this was set to release I lost one of my closest friends who struggled with the very things this website was designed to help with and I knew at that moment the world needed this now more now than ever. With that being said, I give you Not-Alone. -Reginald R.
+        Less than a week before this was set to release I lost one of my closest friends who struggled with the very things this website was designed to help with and I knew at that moment the world needed this now more than ever. With that being said, I give you Not-Alone. -Reginald R.
       </p>
     </Container>
           <Footer />
