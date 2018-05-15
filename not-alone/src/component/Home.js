@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
+import Feed from './Feed';
 import withAuthorization from './withAuthorization';
 import {
   Container,
@@ -8,11 +9,11 @@ import {
 
 const HomePage = () =>
         <div>
-          <Container style={{margin: '50px'}}>
-          <Header as ='h1' textAlign='center'>
+          <Container textAlign='center' style={{margin: '50px'}}>
+          <Header as ='h1'>
             {' '}Welcome to Not-Alone
           </Header>
-          <p>The Home Page is accessible by every signed in user.</p>
+          <Feed />
         </Container>
           <Footer />
         </div>

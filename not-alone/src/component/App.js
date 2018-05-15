@@ -1,7 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import LandingPage from './Landing';
 import SignUpPage from './SignUp';
 import PasswordForgetPage from './PasswordForget';
 import HomePage from './Home'
@@ -35,10 +34,9 @@ const App = () =>
         <hr />
 
         <Route
-          exact path={routes.LANDING}
-          component={() => <LandingPage />}
+          exact path={routes.ABOUT}
+          component={() => <AboutPage />}
         />
-
         <Route
           exact path={routes.SIGN_UP}
           component={() => <SignUpPage />}
@@ -47,7 +45,6 @@ const App = () =>
           exact path={routes.LOG_IN}
           component={() => <LogInPage />}
         />
-
         <Route
           exact path={routes.PASSWORD_FORGET}
           component={() => <PasswordForgetPage />}
@@ -59,10 +56,6 @@ const App = () =>
         <Route
           exact path={routes.ACCOUNT}
           component={() => <AccountPage />}
-        />
-        <Route
-          exact path={routes.ABOUT}
-          component={() => <AboutPage />}
         />
         <Route
           exact path={routes.TREATMENT}

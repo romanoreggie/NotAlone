@@ -31,7 +31,6 @@ const Navigation = () =>
           </Menu.Item>
 
 
-
         <Menu.Item as='a'><Link to={routes.ABOUT}>
           About</Link>
 

@@ -22,7 +22,7 @@ const Feed = () =>(
 <div class="ui feed">
   <div class="event">
     <div class="label">
-      <img src="/images/avatar/small/elliot.jpg">
+      <img src="/images/avatar/small/elliot.jpg"></img>
     </div>
     <div class="content">
       <div class="summary">
@@ -42,7 +42,7 @@ const Feed = () =>(
   </div>
   <div class="event">
     <div class="label">
-      <img src="/images/avatar/small/helen.jpg">
+      <img src="/images/avatar/small/helen.jpg"></img>
     </div>
     <div class="content">
       <div class="summary">
@@ -52,8 +52,8 @@ const Feed = () =>(
         </div>
       </div>
       <div class="extra images">
-        <a><img src="/images/wireframe/image.png"></a>
-        <a><img src="/images/wireframe/image.png"></a>
+        <a><img src="/images/wireframe/image.png"></img></a>
+        <a><img src="/images/wireframe/image.png"></img></a>
       </div>
       <div class="meta">
         <a class="like">
@@ -64,7 +64,7 @@ const Feed = () =>(
   </div>
   <div class="event">
     <div class="label">
-      <img src="/images/avatar/small/jenny.jpg">
+      <img src="/images/avatar/small/jenny.jpg"></img>
     </div>
     <div class="content">
       <div class="summary">
@@ -84,7 +84,7 @@ const Feed = () =>(
   </div>
   <div class="event">
     <div class="label">
-      <img src="/images/avatar/small/joe.jpg">
+      <img src="/images/avatar/small/joe.jpg"></img>
     </div>
     <div class="content">
       <div class="summary">
@@ -105,7 +105,7 @@ const Feed = () =>(
   </div>
   <div class="event">
     <div class="label">
-      <img src="/images/avatar/small/justen.jpg">
+      <img src="/images/avatar/small/justen.jpg"></img>
     </div>
     <div class="content">
       <div class="summary">
@@ -115,8 +115,8 @@ const Feed = () =>(
         </div>
       </div>
       <div class="extra images">
-        <a><img src="/images/wireframe/image.png"></a>
-        <a><img src="/images/wireframe/image.png"></a>
+        <a><img src="/images/wireframe/image.png"></img></a>
+        <a><img src="/images/wireframe/image.png"></img></a>
       </div>
       <div class="meta">
         <a class="like">
