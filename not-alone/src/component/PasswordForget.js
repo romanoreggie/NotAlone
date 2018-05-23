@@ -66,7 +66,7 @@ class PasswordForgetForm extends Component {
   <button class="ui submit button" disabled={isInvalid} type="submit">
     Submit
   </button>
-  { error && <p>{ error.message}</p> }
+  { error && <p>{ error.message }</p> }
 </div>
 </form>
     );
