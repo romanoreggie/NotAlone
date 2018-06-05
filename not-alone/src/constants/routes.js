@@ -19,3 +19,6 @@ export const NEWS = '/news';
 export const EVENTS_LOCAL = '/events-near-you';
 export const EVENTS_GLOBAL = '/global-events';
 export const TWELVESTEP_MEETINGS = '/12step-meetings';
+export const CONTACT_US = '/contact';
+export const TERMS_CONDITIONS = '/terms-and-conditions';
+export const PRIVACY_POLICY = '/privacy';

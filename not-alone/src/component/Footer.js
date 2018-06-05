@@ -68,9 +68,9 @@ const Footer = () => (
     <Divider inverted section />
     <List horizontal inverted divided link>
       <List.Item as='a' href='#'>Site Map</List.Item>
-      <List.Item as='a' href='#'>Contact Us</List.Item>
-      <List.Item as='a' href='#'>Terms and Conditions</List.Item>
-      <List.Item as='a' href='#'>Privacy Policy</List.Item>
+      <List.Item as={Link} to='/contact'>Contact Us</List.Item>
+      <List.Item as={Link} to='/terms-and-conditions'>Terms and Conditions</List.Item>
+      <List.Item as={Link} to='/privacy'>Privacy Policy</List.Item>
     </List>
   </Container>
 </Segment>

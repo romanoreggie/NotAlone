@@ -19,6 +19,9 @@ import EventsGlobalPage from './EventsGlobal';
 import EventsLocalPage from './EventsLocal';
 import NewsPage from './News';
 import AskItForum from './AskItForum';
+import ContactPage from './Contact';
+import TermsPage from './TermsAndConditions';
+import PrivacyPage from './Privacy';
 
 import * as routes from '../constants/routes';
 
@@ -104,6 +107,18 @@ const App = () =>
         <Route
           exact path={routes.TWELVESTEP_MEETINGS}
           component ={() => <TwelveStepMeetingsPage />}
+        />
+        <Route
+          exact path={routes.CONTACT_US}
+          component ={() => <ContactPage />}
+        />
+        <Route
+          exact path={routes.TERMS_CONDITIONS}
+          component ={() => <TermsPage />}
+        />
+        <Route
+          exact path={routes.PRIVACY_POLICY}
+          component ={() => <PrivacyPage />}
         />
 
       </div>
