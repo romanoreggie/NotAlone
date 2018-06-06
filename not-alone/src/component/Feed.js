@@ -1,20 +1,4 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Footer from './Footer';
-
-import {
-  Container,
-  Divider,
-  Dropdown,
-  Grid,
-  Header,
-  Image,
-  List,
-  Menu,
-  Segment
-} from 'semantic-ui-react'
 
 
 const Feed = () =>(
