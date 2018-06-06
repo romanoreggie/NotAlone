@@ -11,7 +11,7 @@ import {
 
 const AccountPage = () =>
   <div>
-    <Container textAlign='center' style={{margin: '50px'}}>
+    <Container style={{margin: '50px'}}>
     <AuthUserContext.Consumer>
       {authUser =>
         <div>

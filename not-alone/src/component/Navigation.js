@@ -22,7 +22,7 @@ const Navigation = () =>
     <Menu fixed='top' inverted="inverted" style={{margin: '50px, 0px, 50px, 0px'}}>
       <Container>
         <Menu.Item as='a' header="header">
-          Not Alone
+          Not-Alone
         </Menu.Item>
 
 

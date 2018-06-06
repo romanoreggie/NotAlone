@@ -59,8 +59,8 @@ const Footer = () => (
           </List>
         </Grid.Column>
         <Grid.Column width={3}>
-          <Header inverted as='h4' content='Footer Header' />
-          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+          <Header inverted as='h4' content='You are Not-Alone' />
+          <p>Don't hesitate to reach out to anyone on this site, we are all here to help.</p>
         </Grid.Column>
       </Grid.Row>
     </Grid>
