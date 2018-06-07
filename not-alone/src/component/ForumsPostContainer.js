@@ -16,27 +16,42 @@ class ForumsPostContainer extends Component {
   // };
 
   componentDidMount(){
+    let forumsPostContainer = this
     firebase.database().ref('forum').once('value').then(function(snapshot) {
       console.log(snapshot.val());
 
-    let posts = snapshot.val()
-    this.setState({posts: posts})
-  })
+      let posts = snapshot.val()
+      if(typeof posts==="object") {
 
+        let result = Object.keys(posts).map(function(key) {
+            return [Number(key), posts[key]];
+          });
+        forumsPostContainer.setState({posts: result})
+      } else {
+        forumsPostContainer.setState({posts: posts})
+      }
+      console.log(posts);
+    })
   }
 
   render() {
-    let allPosts = this.state.posts.map((post) => {
+    let allPosts;
+    let posts;
+    console.log(posts);
+    if(this.state.posts) {
+      console.log(this.state.posts);
+      allPosts = this.state.posts.map((post , index) => {
 
-      return( <div style={{ margin: '50px' }}>
+        return( <div style={{ margin: '50px' }} key={index}>
                   <h1> {post.title}</h1>
                    <p> {post.body}</p>
               </div>
-            )
-            })
+          )
+        })
+    }
         return(
           <div style={{ margin: '50px' }}>
-            {allPosts}
+            {posts}
           </div>
           )
           }

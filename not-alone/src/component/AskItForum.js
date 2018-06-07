@@ -1,14 +1,22 @@
 import React, {Component} from 'react';
 import ForumsPostContainer from './ForumsPostContainer'
+import ForumSubmitForm from './ForumSubmitForm'
 
 class AskItForum extends Component {
   constructor(props) {
     super(props);
 
   }
+  // submitPost(event){
+  //   event.preventDefault()
+  //   console.log(event.currentTarget.value);
+  // }
   render() {
     return (
-      <ForumsPostContainer />
+      <div>
+        <ForumSubmitForm />
+        <ForumsPostContainer />
+      </div>
     );
   }
 }
