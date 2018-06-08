@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import * as firebase from 'firebase'
+import * as firebase from 'firebase';
+import {Header, Container} from 'semantic-ui-react';
+import Footer from './Footer';
 
 class ForumSubmitForm extends Component {
   constructor(props) {
@@ -26,13 +28,23 @@ class ForumSubmitForm extends Component {
 
   render() {
     return (
-              <form style={{ margin: '50px' }}
-                  onSubmit={this.handleSubmit}>
-                 <label>Ask your questions below</label>
-                  <textarea id="body" name="body"></textarea>
-                  <input id="title" name="title"></input>
-                <div class="ui submit button" id="submit">Submit</div>
-            </form>
+          <div>
+            <Container textAlign='center' style={{margin: '50px'}}>
+              <form onSubmit={this.handleSubmit}>
+              <Header as='h1'>Ask It Forum</Header>
+                <div class="ui form">
+                  <div class="field">
+                    <label>Ask your questions below</label>
+                    <textarea id="body" name="body" placeholder="Type your post here"></textarea>
+                    <input id="title" name="title" placeholder="Enter the title of your post here"></input>
+                  <div class="ui submit button" id="submit">Submit</div>
+                  </div>
+                </div>
+              </form>
+            </Container>
+          <Footer />
+        </div>
+
     );
   }
 }

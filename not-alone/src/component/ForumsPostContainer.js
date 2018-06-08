@@ -37,7 +37,7 @@ class ForumsPostContainer extends Component {
   render() {
     let allPosts;
     let posts;
-    console.log(posts);
+
     if(this.state.posts) {
       console.log(this.state.posts);
       allPosts = this.state.posts.map((post , index) => {
