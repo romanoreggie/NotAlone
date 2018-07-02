@@ -58,6 +58,9 @@ const Navigation = () =>
             <Dropdown.Item as={Link} to='/news'>
                 News
             </Dropdown.Item>
+            <Dropdown.Item as={Link} to='/erins-place'>
+                Erin's Place
+            </Dropdown.Item>
             <Dropdown.Divider/>
             <Dropdown.Header>Recovery</Dropdown.Header>
             <Dropdown.Item>

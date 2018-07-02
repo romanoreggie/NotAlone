@@ -22,6 +22,7 @@ import AskItForum from './AskItForum';
 import ContactPage from './Contact';
 import TermsPage from './TermsAndConditions';
 import PrivacyPage from './Privacy';
+import ErinsPlace from './ErinsPlace';
 
 import * as routes from '../constants/routes';
 
@@ -119,6 +120,10 @@ const App = () =>
         <Route
           exact path={routes.PRIVACY_POLICY}
           component ={() => <PrivacyPage />}
+        />
+        <Route
+          exact path={routes.ERINS_PLACE}
+          component = {() => <ErinsPlace />}
         />
 
       </div>

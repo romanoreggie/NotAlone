@@ -22,3 +22,4 @@ export const TWELVESTEP_MEETINGS = '/12step-meetings';
 export const CONTACT_US = '/contact';
 export const TERMS_CONDITIONS = '/terms-and-conditions';
 export const PRIVACY_POLICY = '/privacy';
+export const ERINS_PLACE = '/erins-place';
