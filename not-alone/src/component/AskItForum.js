@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ForumsPostContainer from './ForumsPostContainer'
 import ForumSubmitForm from './ForumSubmitForm'
+import Footer from './Footer';
 
 class AskItForum extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class AskItForum extends Component {
       <div>
         <ForumSubmitForm />
         <ForumsPostContainer />
+      <Footer />
       </div>
     );
   }
@@ -44,7 +46,7 @@ class AskItForum extends Component {
  //          <h3>Post #5</h3>
  //          <p>Lorem ipsum dolor sit amet, tristique quia, quis sem neque porttitor. In posuere nunc pharetra nam id, mollis porttitor, neque viverra rutrum ullamcorper elit elit nullam, posuere felis mattis tortor ac. Neque massa ac id dui eros, scelerisque arcu platea massa molestie, erat justo tortor scelerisque sit neque leo, felis pede ut commodo. Amet semper diam consequat, suscipit condimentum rhoncus tellus wisi purus.</p>
  //          </Container>
- //          <Footer />
+          <Footer />
  //        </div>
 
 export default AskItForum;

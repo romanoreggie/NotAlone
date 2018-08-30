@@ -42,7 +42,7 @@ class ForumSubmitForm extends Component {
                 </div>
               </form>
             </Container>
-          <Footer />
+          {/* <Footer /> */}
         </div>
 
     );

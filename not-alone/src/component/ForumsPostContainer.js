@@ -42,7 +42,9 @@ class ForumsPostContainer extends Component {
       console.log(this.state.posts);
       allPosts = this.state.posts.map((post , index) => {
 
-        return( <div style={{ margin: '50px' }} key={index}>
+        return(
+          <div style={{ margin: '50px' }}>
+                <p>{this.state.posts}</p>
                   <h1> {post.title}</h1>
                    <p> {post.body}</p>
               </div>
@@ -51,7 +53,9 @@ class ForumsPostContainer extends Component {
     }
         return(
           <div style={{ margin: '50px' }}>
-            {posts}
+            <p>{posts}</p>
+            {/* {this.state.posts} */}
+            <p>test</p>
           </div>
           )
           }

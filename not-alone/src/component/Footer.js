@@ -12,7 +12,7 @@ const Footer = () => (
 <Segment
   inverted
   vertical
-  style={{ margin: '5em 0em 0em', padding: '5em 0em' }}
+  style={{ margin: '5em 0em 0em', padding: '5em 0em', position: 'sticky', left: '0', bottom: '0', right: '0' }}
 >
   <Container textAlign='center'>
     <Grid divided inverted stackable>

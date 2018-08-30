@@ -13,7 +13,7 @@ const AboutPage = () =>
       <p>After seeing countless people go back out in the rooms of recovery I realized something had to change, we live in a world where we are capable of getting the same connection through our devices that previous generations could receive from face to face connection.
       </p>
       <p>
-        With that in mind I wanted to develop somewhere that those struggling to connect and develop a fellowship could go to reach out for help and not have the same fear of connection, social anxiety, or whatever it may be preventing someone to ask for the help they needed.
+        With that in mind I wanted to develop somewhere that those struggling to connect and develop a fellowship could go to reach out for help and not have the same fear of connection, social anxiety, or whatever it may be that is preventing someone to ask for the help they needed.
       </p>
       <p>
         Less than a week before this was set to release I lost one of my closest friends who struggled with the very things this website was designed to help with and I knew at that moment the world needed this now more than ever. With that being said, I give you Not-Alone. -Reginald R.
